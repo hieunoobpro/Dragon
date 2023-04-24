@@ -7,6 +7,7 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class EmployeeHandle {
+    /*nhap danh sach nhan vien*/
     public Employee employeeInput(Scanner scanner){
         System.out.println("Nhap ten nhan vien");
         String name = scanner.nextLine();
@@ -17,6 +18,7 @@ public class EmployeeHandle {
         employee.setPotition(potition);
         return employee;
     }
+ /*   kiem tra luong theo tung vi tri*/
     public void checkSalary(Scanner scanner, Employee employee){
         double tax=0;
             if(Objects.equals(employee.getPotition(), "administrative staff")){
