@@ -1,6 +1,8 @@
 package entity;
 
 public class Employee {
+    private static int autoId;
+    private int id;
     public String name;
     public Double salary;
     public String potition;
@@ -10,10 +12,15 @@ public class Employee {
     }
 
     public Employee(String name, Double salary, String potition, Double tax) {
+        this.id=++autoId;
         this.name = name;
         this.salary = salary;
         this.potition = potition;
         this.tax = tax;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getName() {

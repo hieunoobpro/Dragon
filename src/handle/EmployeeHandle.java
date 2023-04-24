@@ -7,7 +7,7 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class EmployeeHandle {
-    public Employee employeeHandle(Scanner scanner){
+    public Employee employeeInput(Scanner scanner){
         System.out.println("Nhap ten nhan vien");
         String name = scanner.nextLine();
         System.out.println("Nhap vi tri");
